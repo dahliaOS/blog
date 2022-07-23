@@ -1,0 +1,12 @@
+---
+type: tag
+---
+
+import { useRouter } from "next/router";
+
+export const TagName = () => {
+    const { query } = useRouter();
+    return query.tag;
+};
+
+# Tagged Posts - "<TagName/>"

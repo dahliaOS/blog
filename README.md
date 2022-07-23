@@ -1,25 +1,70 @@
-<!--MAKE SURE TO ALSO EDIT THE BUG REPORT / FEATURE REQUEST / PULL REQUEST TEMPLATES, IT'S A MUST!!!!-->
-<!--AND THEN YOU CAN ALSO REMOVE THIS COMMENTED TEXT XDDDDDDDDDDDDDDD-->
-
 <p align="center">
-<a href="https://dahliaos.io">Website</a> ●
-<a href="https://dahliaos.io/discord">Discord</a> ●
-<a href="https://dahliaos.io/download">Releases</a> ●
-<a href="https://dahliaos.io/donate">Donate</a> ●
+<a href="https://dahliaos.io">Website</a> •
+<a href="https://dahliaos.io/discord">Discord</a> •
+<a href="https://dahliaos.io/download">Releases</a> •
+<a href="https://dahliaos.io/donate">Donate</a> •
 <a href="https://docs.dahliaos.io">Documentation</a>
 
-# name_of_repo
-Insert some badges from https://shields.io
-(Mostly a License, Issues open badges (can also be localized, website and ci/deploy badges))
+# Blog
 
- - **Short introduction** of the repository (can and should be in multiple lines)
- - **Add new headers** depending on what the repo is and what you want to write
- - **Do not change** the Contribute and License header sections, they're good to go
- - **These lines in this header sections can go**, also make sure you set correct topics on the repo
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fblog.dahliaos.io)
+![GitHub](https://img.shields.io/github/license/dahliaos/blog?color=brightgreen)
+
+- **Blog** for the dahliaOS project.
+- **Read the blog** on the link [here](https://blog.dahliaos.io)!
+
+## Development
+
+To develop and locally test the blog:
+
+### Step 1. Install development tools:
+
+1. [Install Node.js and NPM](https://nodejs.org/en/download/package-manager/)
+1. [Install PNPM](https://pnpm.io/installation) (recommended opposed to NPM/Yarn)
+1. Code editor of your choice (we recommend [VSCode](https://code.visualstudio.com/))
+
+### Step 2. Install dependencies:
+
+Install node modules required to run the blog by running:
+
+```
+pnpm i
+```
+
+### Step 3. Start the Next.js dev server:
+
+```
+pnpm dev
+```
+
+In a browser, load the page [localhost:3000](http://localhost:3000) and you should now be able to test the blog while making your changes.
+Next.js' dev server has hot reloading so no need to restart the instance when it's running!
+
+### Step 4. Build:
+
+After making your changes and verifying it all works in the dev server, furtherly test them out by building the blog:
+
+```
+pnpm build
+```
+
+### Step 5. Start:
+
+```
+pnpm start
+```
+
+In a browser, load the page [localhost:3000](http://localhost:3000) and you should now be able to view the built blog.
 
 ## Contribute
 
-If you're wondering how to contribute to the project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
+If you're wondering how to contribute to the project, please refer to [CONTRIBUTING.md](/CONTRIBUTING.md)
+
+## Sponsored by
+
+<p align="left">
+  <a href ="https://vercel.com/dahliaos?utm_source=dahliaOS&utm_campaign=oss"><img width="20%" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"></a>
+<p>
 
 ## License
 
