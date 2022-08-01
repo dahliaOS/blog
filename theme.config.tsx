@@ -12,12 +12,11 @@ const config = {
         <a href="mailto:contact@dahliaos.io">The dahliaOS Authors</a>
         <p>
           <a
-            className="w-full inline-flex items-center no-underline text-current font-semibold grayscale"
             href="https://vercel.com/?utm_source=dahliaOS&utm_campaign=osss"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="mr-1">Powered By</span>
+            <span>Powered By</span>
             <span>
               <Vercel />
             </span>
