@@ -15,6 +15,7 @@ const config = {
             className="w-full inline-flex items-center no-underline text-current font-semibold grayscale"
             href="https://vercel.com/?utm_source=dahliaOS&utm_campaign=osss"
             target="_blank"
+            rel="noreferrer"
           >
             <span className="mr-1">Powered By</span>
             <span>

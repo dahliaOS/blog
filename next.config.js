@@ -2,7 +2,6 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
 };
 
 const withNextra = require("nextra")({
