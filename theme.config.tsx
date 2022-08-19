@@ -39,8 +39,8 @@ const config = {
         <meta property="og:title" content="Blog" key="title" />
         <meta name="description" content="dahliaOS Blog" />
         <meta name="og:description" content="dahliaOS Blog" />
-        <meta property="og:url" content="https://blog.dahliaos.io"></meta>
-        <meta name="theme-color" content="#ff3d00"></meta>
+        <meta property="og:url" content="https://blog.dahliaos.io" />
+        <meta name="theme-color" content="#ff3d00" />
       </>
     );
   },
