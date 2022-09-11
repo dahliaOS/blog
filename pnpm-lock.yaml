@@ -13,8 +13,8 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-react: ^7.31.8
   next: ^12.3.0
-  nextra: 2.0.0-beta.25
-  nextra-theme-blog: 2.0.0-beta.25
+  nextra: 2.0.0-beta.26
+  nextra-theme-blog: 2.0.0-beta.26
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -22,8 +22,8 @@ specifiers:
 
 dependencies:
   next: 12.3.0_biqbaboplfbrettd7655fr4n2y
-  nextra: 2.0.0-beta.25_c3hne4hwj64hb7tofigd3bvkji
-  nextra-theme-blog: 2.0.0-beta.25_c3hne4hwj64hb7tofigd3bvkji
+  nextra: 2.0.0-beta.26_c3hne4hwj64hb7tofigd3bvkji
+  nextra-theme-blog: 2.0.0-beta.26_c3hne4hwj64hb7tofigd3bvkji
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -2745,8 +2745,8 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog/2.0.0-beta.25_c3hne4hwj64hb7tofigd3bvkji:
-    resolution: {integrity: sha512-JmT0eWRs8vdgJCcXioxwNCtT1Rzt02/4aM9ELZvsH9796ZJ7tTlDyUgQokxGZ+Q8akdbjGksWd+DM7eNZLHQOw==}
+  /nextra-theme-blog/2.0.0-beta.26_c3hne4hwj64hb7tofigd3bvkji:
+    resolution: {integrity: sha512-bJtVMiP7WI2N4a1YCLgT4fDTyJXCFdVSLH6Hf0/X+KEw7oT//KqfUW8wo9aTmGZdU5qPs0KyXmo+Z/scFfUTFA==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
@@ -2763,8 +2763,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /nextra/2.0.0-beta.25_c3hne4hwj64hb7tofigd3bvkji:
-    resolution: {integrity: sha512-fNAlD7+M/o5ZdvoH5YuF+Znv7n4K5kpl3tLoEQl2dkpjLZDuptKtyVV95F2//kraVqthEg5uji8ZWThbwCPkpA==}
+  /nextra/2.0.0-beta.26_c3hne4hwj64hb7tofigd3bvkji:
+    resolution: {integrity: sha512-x5WvEqDvjAZto5yxPD0t8bLsZAXwU1ZUyUGbE7ohSUOgAiH5GrG6DezENF6F6LK29kIYtNHde2ROdZQJSOyqSQ==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
