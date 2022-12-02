@@ -1,52 +1,96 @@
-import Vercel from "./components/Vercel";
+import Link from "next/link";
+import { VercelLogo } from "./components/Icons";
 
 const config = {
   readMore: "Read More →",
-  titleSuffix: " – dahliaOS",
   darkMode: true,
+  postFooter: null,
   footer: (
-    <footer>
+    <>
       <hr />
-      <small>
-        Copyright - 2019 - {new Date().getFullYear()} @{" "}
-        <a href="mailto:contact@dahliaos.io">The dahliaOS Authors</a>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <p>
-          <a
-            href="https://vercel.com/?utm_source=dahliaOS&utm_campaign=osss"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Powered By</span>
-            <span>
-              <Vercel />
-            </span>
-          </a>
+          Copyright - 2019 - {new Date().getFullYear()} @ The dahliaOS Authors
         </p>
-      </small>
-    </footer>
+        <Link
+          href="https://vercel.com?utm_source=dahliaOS&amp;utm_campaign=oss"
+          target="_blank"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "10px",
+            textDecoration: "none",
+          }}
+        >
+          Powered By
+          <VercelLogo />
+        </Link>
+      </div>
+    </>
   ),
-  head: () => {
+  head: ({ title, meta }) => {
     return (
       <>
+        {meta.description && (
+          <meta name="description" content={meta.description} />
+        )}
+        {meta.description && (
+          <meta name="og:description" content={meta.description} />
+        )}
+        {meta.tag && <meta name="keywords" content={meta.tag} />}
+        {meta.author && <meta name="author" content={meta.author} />}
+        {title && <title>{`${title} - dahliaOS Blog`}</title>}
+        {title && <meta name="og:title" content={`${title} - dahliaOS Blog`} />}
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="Blog" />
         <link rel="canonical" href="https://blog.dahliaos.io" />
-        <meta name="viewport" content="width=device-width" />
-        <meta property="og:image" content="https://imgur.com/pqgjEpd.png" />
-        <meta property="og:site_name" content="dahliaOS" />
-        <meta property="og:title" content="Blog" key="title" />
-        <meta name="description" content="dahliaOS Blog" />
-        <meta name="og:description" content="dahliaOS Blog" />
         <meta property="og:url" content="https://blog.dahliaos.io" />
         <meta name="theme-color" content="#ff3d00" />
+        <meta property="og:image" content="https://imgur.com/pqgjEpd.png" />
+        <meta property="og:site_name" content="dahliaOS" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ff3d00" />
+        <meta name="apple-mobile-web-app-title" content="dahliaOS" />
+        <meta
+          name="msapplication-TileImage"
+          content="/images/favicon/favicon.png"
+        />
+        <meta name="msapplication-TileColor" content="#ff3d00" />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta
+          name="keywords"
+          content="dahlia, blog, software, flutter, fuchsia, linux, dahliaOS, computer, operating system, os, system, kernel, dart, open source, material, design, zircon, go, rust"
+        />
       </>
     );
   },
   navs: [
     { url: "https://dahliaos.io", name: "Website" },
-    { url: "https://github.com/dahliaos", name: "GitHub" },
+    { url: "https://dahliaos.io/github", name: "GitHub" },
   ],
 };
 
