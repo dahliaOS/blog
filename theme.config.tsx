@@ -28,7 +28,7 @@ const config = {
       </div>
     </>
   ),
-  head: ({ title, meta }) => {
+  head: ({ title, meta }: { title: any; meta: any }) => {
     return (
       <>
         {meta.description && (
