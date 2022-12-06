@@ -36,19 +36,19 @@ const config = {
       <>
         {route === "/blog" ? (
           <meta
-            name="description"
+            property="description"
             content="Browse all blog posts made by dahliaOS maintainers."
           />
         ) : (
-          <meta name="description" content={meta.description} />
+          <meta property="description" content={meta.description} />
         )}
         {route === "/blog" ? (
           <meta
-            name="og:description"
+            property="og:description"
             content="Browse all blog posts made by dahliaOS maintainers."
           />
         ) : (
-          <meta name="og:description" content={meta.description} />
+          <meta property="og:description" content={meta.description} />
         )}
         {<meta name="author" content={meta.author} />}
         {route === "/" ? (
@@ -57,9 +57,9 @@ const config = {
           <title>{`${title} - dahliaOS Blog`}</title>
         )}
         {route === "/" ? (
-          <meta name="og:title" content="dahliaOS Blog" />
+          <meta property="og:title" content="dahliaOS Blog" />
         ) : (
-          <meta name="og:title" content={`${title} - dahliaOS Blog`} />
+          <meta property="og:title" content={`${title} - dahliaOS Blog`} />
         )}
 
         <meta charSet="UTF-8" />
