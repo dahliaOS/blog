@@ -52,7 +52,6 @@ const config = {
         <link rel="canonical" href="https://blog.dahliaos.io" />
         <meta property="og:url" content={`https://blog.dahliaos.io${asPath}`} />
         <meta name="theme-color" content="#ff3d00" />
-        <meta property="og:image" content="https://imgur.com/pqgjEpd.png" />
         <meta property="og:site_name" content="dahliaOS" />
         <meta name="viewport" content="width=device-width" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -91,6 +90,29 @@ const config = {
           content={`${meta.tag}, dahlia, blog, software, flutter, fuchsia, linux, dahliaOS, computer, operating system, os, system, kernel, dart, open source, material, design, zircon, go, rust`}
         />
         <meta httpEquiv="Content-Language" content="en" />
+        <meta
+          property="og:image"
+          content={meta.image || "https://imgur.com/pqgjEpd.png"}
+        />
+        <meta
+          property="twitter:card"
+          content={meta.image ? "summary_large_image" : "summary"}
+        />
+        <meta property="twitter:site" content="@dahliaos_io" />
+        {route === "/" ? (
+          <meta property="twitter:title" content="dahliaOS Blog" />
+        ) : (
+          <meta property="twitter:title" content={`${title} - dahliaOS Blog`} />
+        )}
+        <meta property="twitter:description" content={meta.description} />
+        <meta
+          property="twitter:url"
+          content={`https://blog.dahliaos.io${asPath}`}
+        />
+        <meta
+          property="twitter:image"
+          content={meta.image || "https://imgur.com/pqgjEpd.png"}
+        />
       </>
     );
   },
