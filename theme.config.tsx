@@ -37,7 +37,7 @@ const config = {
         {route === "/blog" ? (
           <meta
             name="description"
-            content="dahliaOS is a modern, secure, lightweight and responsive operating system, combining the best of GNU/Linux and Fuchsia OS. We are developing a privacy-respecting, fast, secure and lightweight operating system, our goal is to establish a new standard for the desktop platform."
+            content="Browse all blog posts made by dahliaOS maintainers."
           />
         ) : (
           <meta name="description" content={meta.description} />
@@ -45,7 +45,7 @@ const config = {
         {route === "/blog" ? (
           <meta
             name="og:description"
-            content="dahliaOS is a modern, secure, lightweight and responsive operating system, combining the best of GNU/Linux and Fuchsia OS. We are developing a privacy-respecting, fast, secure and lightweight operating system, our goal is to establish a new standard for the desktop platform."
+            content="Browse all blog posts made by dahliaOS maintainers."
           />
         ) : (
           <meta name="og:description" content={meta.description} />
