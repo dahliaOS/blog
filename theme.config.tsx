@@ -34,22 +34,8 @@ const config = {
 
     return (
       <>
-        {route === "/blog" ? (
-          <meta
-            property="description"
-            content="Browse all blog posts made by dahliaOS maintainers."
-          />
-        ) : (
-          <meta property="description" content={meta.description} />
-        )}
-        {route === "/blog" ? (
-          <meta
-            property="og:description"
-            content="Browse all blog posts made by dahliaOS maintainers."
-          />
-        ) : (
-          <meta property="og:description" content={meta.description} />
-        )}
+        <meta property="description" content={meta.description} />
+        <meta property="og:description" content={meta.description} />
         {<meta name="author" content={meta.author} />}
         {route === "/" ? (
           <title>dahliaOS Blog</title>
@@ -61,7 +47,6 @@ const config = {
         ) : (
           <meta property="og:title" content={`${title} - dahliaOS Blog`} />
         )}
-
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link rel="canonical" href="https://blog.dahliaos.io" />
