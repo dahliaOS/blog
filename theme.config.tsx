@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { VercelLogo } from "./components/Icons";
 
 const config = {
@@ -29,22 +30,42 @@ const config = {
     </>
   ),
   head: ({ title, meta }: { title: any; meta: any }) => {
+    const { asPath, route } = useRouter();
+
     return (
       <>
-        {meta.description && (
+        {route === "/blog" ? (
+          <meta
+            name="description"
+            content="dahliaOS is a modern, secure, lightweight and responsive operating system, combining the best of GNU/Linux and Fuchsia OS. We are developing a privacy-respecting, fast, secure and lightweight operating system, our goal is to establish a new standard for the desktop platform."
+          />
+        ) : (
           <meta name="description" content={meta.description} />
         )}
-        {meta.description && (
-          <meta name="og:description" content={meta.description} />
+        {route === "/blog" ? (
+          <meta
+            name="og:description"
+            content="dahliaOS is a modern, secure, lightweight and responsive operating system, combining the best of GNU/Linux and Fuchsia OS. We are developing a privacy-respecting, fast, secure and lightweight operating system, our goal is to establish a new standard for the desktop platform."
+          />
+        ) : (
+          <meta name="description" content={meta.description} />
         )}
-        {meta.tag && <meta name="keywords" content={meta.tag} />}
-        {meta.author && <meta name="author" content={meta.author} />}
-        {title && <title>{`${title} - dahliaOS Blog`}</title>}
-        {title && <meta name="og:title" content={`${title} - dahliaOS Blog`} />}
+        {<meta name="author" content={meta.author} />}
+        {route === "/" ? (
+          <title>dahliaOS Blog</title>
+        ) : (
+          <title>{`${title} - dahliaOS Blog`}</title>
+        )}
+        {route === "/" ? (
+          <meta name="og:title" content="dahliaOS Blog" />
+        ) : (
+          <meta name="og:title" content={`${title} - dahliaOS Blog`} />
+        )}
+
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link rel="canonical" href="https://blog.dahliaos.io" />
-        <meta property="og:url" content="https://blog.dahliaos.io" />
+        <meta property="og:url" content={`https://blog.dahliaos.io${asPath}`} />
         <meta name="theme-color" content="#ff3d00" />
         <meta property="og:image" content="https://imgur.com/pqgjEpd.png" />
         <meta property="og:site_name" content="dahliaOS" />
@@ -62,7 +83,6 @@ const config = {
           content="/images/favicon/favicon.png"
         />
         <meta name="msapplication-TileColor" content="#ff3d00" />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -83,14 +103,15 @@ const config = {
         <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="keywords"
-          content="dahlia, blog, software, flutter, fuchsia, linux, dahliaOS, computer, operating system, os, system, kernel, dart, open source, material, design, zircon, go, rust"
+          content={`${meta.tag}, dahlia, blog, software, flutter, fuchsia, linux, dahliaOS, computer, operating system, os, system, kernel, dart, open source, material, design, zircon, go, rust`}
         />
+        <meta httpEquiv="Content-Language" content="en" />
       </>
     );
   },
   navs: [
-    { url: "https://dahliaos.io", name: "Website" },
-    { url: "https://dahliaos.io/github", name: "GitHub" },
+    { url: "https://dahliaos.io", name: "Website ↗" },
+    { url: "https://dahliaos.io/github", name: "GitHub ↗" },
   ],
 };
 
