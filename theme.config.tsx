@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import urlcat from "urlcat";
 import { VercelLogo } from "./components/Icons";
 
 const config = {
@@ -92,7 +93,13 @@ const config = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           property="og:image"
-          content={meta.image || "https://imgur.com/pqgjEpd.png"}
+          content={
+            meta.image ||
+            urlcat("https://blog.dahliaos.io/api/og/", {
+              title,
+              desc: meta.description ?? undefined,
+            })
+          }
         />
         <meta
           property="twitter:card"
@@ -111,7 +118,13 @@ const config = {
         />
         <meta
           property="twitter:image"
-          content={meta.image || "https://imgur.com/pqgjEpd.png"}
+          content={
+            meta.image ||
+            urlcat("https://blog.dahliaos.io/api/og/", {
+              title,
+              desc: meta.description ?? undefined,
+            })
+          }
         />
       </>
     );
