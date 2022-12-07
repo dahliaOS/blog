@@ -98,6 +98,7 @@ const config = {
             urlcat("https://blog.dahliaos.io/api/og/", {
               title,
               desc: meta.description ?? undefined,
+              date: meta.date ?? undefined,
             })
           }
         />
@@ -123,6 +124,7 @@ const config = {
             urlcat("https://blog.dahliaos.io/api/og/", {
               title,
               desc: meta.description ?? undefined,
+              date: meta.date ?? undefined,
             })
           }
         />

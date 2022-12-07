@@ -13,10 +13,14 @@ export default function handler(req: NextRequest) {
     const title = hasTitle
       ? searchParams.get("title")?.slice(0, 100)
       : "dahliaOS Blog post";
+
     const hasDesc = searchParams.has("desc");
     const desc = hasDesc
       ? searchParams.get("desc")?.slice(0, 100)
       : "Check out the new post on our blog!";
+
+    const hasDate = searchParams.has("date");
+    const date = hasDate ? searchParams.get("date")?.slice(0, 100) : null;
 
     return new ImageResponse(
       (
@@ -68,6 +72,19 @@ export default function handler(req: NextRequest) {
             }}
           >
             {title}
+          </p>
+          <p
+            style={{
+              fontSize: 22,
+              fontStyle: "normal",
+              letterSpacing: "-0.025em",
+              color: "gray",
+              lineHeight: 1.4,
+              whiteSpace: "pre-wrap",
+              marginTop: -15,
+            }}
+          >
+            {new Date(date as string).toDateString()}
           </p>
           <p
             style={{
