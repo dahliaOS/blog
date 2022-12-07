@@ -10,23 +10,34 @@ const config = {
   footer: (
     <>
       <hr />
-      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <p>
-          Copyright - 2019 - {new Date().getFullYear()} @ The dahliaOS Authors
-        </p>
-        <Link
-          href="https://vercel.com?utm_source=dahliaOS&amp;utm_campaign=oss"
-          target="_blank"
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "10px",
-            textDecoration: "none",
-          }}
-        >
-          Powered By
-          <VercelLogo />
-        </Link>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "10px",
+          justifyContent: "space-between",
+          alignItems: "baseline",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <p>
+            Copyright - 2019 - {new Date().getFullYear()} @ The dahliaOS Authors
+          </p>
+          <Link
+            href="https://vercel.com?utm_source=dahliaOS&amp;utm_campaign=oss"
+            target="_blank"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "10px",
+              textDecoration: "none",
+            }}
+          >
+            Powered By
+            <VercelLogo />
+          </Link>
+        </div>
+        <Link href={"/feed.xml"}>RSS</Link>
       </div>
     </>
   ),
