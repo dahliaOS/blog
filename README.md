@@ -5,7 +5,7 @@
 <a href="https://dahliaos.io/donate">Donate</a> •
 <a href="https://docs.dahliaos.io">Documentation</a>
 
-# Blog
+# Blog 
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fblog.dahliaos.io)
 ![GitHub](https://img.shields.io/github/license/dahliaos/blog?color=brightgreen)
