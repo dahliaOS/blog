@@ -1,12 +1,63 @@
 ---
 title: No, dahliaOS isn’t dead.
-description: Is dahliaOS dead? Of course not. Here's what we've been up to. 
+description: Is dahliaOS dead? Of course not! Here's what we've been up to. 
 date: 2023-06-07
 tag: [post]
 author: Noah Cain
-image: "https://blog.dahliaos.io/api/og?title=No, dahliaOS isn’t dead.&desc=Is dahliaOS dead? Of course not. Here's what we've been up to.&date=2023-06-07"
+image: "https://blog.dahliaos.io/api/og?title=No, dahliaOS isn’t dead.&desc=Is dahliaOS dead? Of course not! Here's what we've been up to.&date=2023-06-07"
 ---
 
 # No, dahliaOS isn’t dead.
 
-Today marks the day we made our first post on the dahliaOS blog! Stay tuned, more is yet to come! :)
+Is dahliaOS dead? Of course not!
+
+I’ve seen this question floating around on our various channels of communication as to whether or not the project is still going. People point to our lack of releases and lack of social media presence some sort of indicator of inactivity. This couldn’t be further from the truth, and I am here to tell you why. 
+
+## Issue #1: Infrequent Releases
+
+A lot of the assumptions surrounding the activity of the project stem from our lack of recent releases. Our last release was a stock Fuchsia build back in February, and the last Linux-based build was back in February of 2022. We do not release software nearly as frequently as we would like to, but it is largely the result of our strict quality standards for what is able to be released. We would like our releases to be relatively stable, and meeting or exceeding the feature set of the previous release, and our current work on the new Pangolin compositor, which started in Q2 2022 has made meeting the feature target significantly more complex. We decoupled a lot of services from Pangolin, and we removed the builtin applications from Pangolin itself (as evidenced by their disappearance from the web demo), which results in a smaller binary size and better performance, but at the cost of a lot of work to get back to the previous, not very feature-rich state of the desktop. Those applications still need to be worked on in order to reach the feature target that we are aiming for in order to release a new build. The system simply is not ready for the general purpose use that a frequent release schedule would suggest, however, a lot of our front-end changed are already released and reflected in our [web demo.](https://web.dahliaos.io)
+
+Issue #2: Social Media Presence
+
+This one is on us, but largely falls down to a difference in marketing strategies from other projects. While posting updates with frequency would be nice, projects with a comparable following but more active social media tend to get lost in the wind, with their posts ignored over a greater amount of time. Our less frequent, but more information-rich posts receive considerably more traffic than the more frequent posts from other projects of comparable size. We generally stick to Github for information on feature changes and new releases. To keep updated on those, you can follow the project on there; (it’s the button on the top right of the page). That said, Github is not the social media platform for everyone, it’s probably out there with other awkward places like LinkedIn [(or apparently Reddit in about a month)](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/). In order to better communicate things, we should stick to keeping updates on our platforms that people actually use, and linking to this post as the start of our blog should work to improve that communication. 
+
+Issue #3: Open-source maintainers are people too
+
+We are not a particularly large team, and to the best of my knowledge, none of us are robots. We are people with schedules, commitments, and lives. Occasionally there comes a time where one needs to touch grass. We can’t and don’t spend the majority of our time working on the project. In my case, I was busy grinding out the last half of my senior year (a literal nightmare). While the expectations for our project, set by both ourselves and all of you, are high, it is important to give open-source maintainers time to get their crap together. Burnout, in this industry especially, really is prevalent, and it is necessary for us to take time for ourselves, to focus on the things that really matter. 
+
+This project has been active for almost 5 years (yeah, it’s really been that long), and we while we have hit the occasional period of inactivity, never once have we discussed stopping the project. It seems that the fate of many open-source projects is a slowdown and then the maintainer seems to just drop off the face of the earth. With dahliaOS, this is not the case. We do not plan on shutting down any time soon, and we have sort of gotten to the point where the sunk-cost fallacy becomes reality, we have come too far to stop now, or really anytime in the future. 
+
+What have we been doing?
+
+So, with all of that out of the way, what have we been up to for all of this time?
+
+Tons of work on our new UI library, [Zenit]
+
+(https://github.com/dahliaOS/zenit_ui),
+![zenit_ui demo](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image6.png?raw=true)
+
+Official support for RISCV devices,
+
+![neofetch and dart running on a RISCV build of dahliaOS](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image5.png?raw=true)
+
+Lots of interface design work,
+
+![App Store concept design](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image4.png?raw=true)
+
+![New settings app concept](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image1.png?raw=true)
+
+Improvements to our Terminal and Files applications,
+
+![Files App improvements](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image8.png?raw=true)
+
+![Terminal app running on macOS](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image7.png?raw=true)
+
+…an actual compositor,
+
+![Pangolin compositor with gnome-calculator and KWrite](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image3.png?raw=true)
+
+![Compositor with keyboard input being demonstrated](https://github.com/dahliaOS/blog/blob/main/pages/posts/state-of-the-project/images/image2.png?raw=true)
+
+And much, much more!
+
+Overall, we have had a fairly productive time this year, even if we have not been making releases or social media posts. There are still things for us to work on and improve, but the state of our project is very much alive, and thriving. To get more consistent updates, stay tuned to our blog here, or consider joining us on [Discord](https://dahliaos.io/discord), [Telegram](https://dahliaos.io/telegram), or following us on [Github](https://dahliaos.io/github).
