@@ -44,7 +44,7 @@ Next.js' dev server has hot reloading so no need to restart the instance when it
 After making your changes and verifying it all works in the dev server, furtherly test them out by building the blog:
 
 ```
-bun build
+bun run build
 ```
 
 ### 5. Start:
